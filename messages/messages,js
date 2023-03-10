@@ -27,4 +27,32 @@ const quotes = [
   '"It does not do to dwell on dreams and forget to live."',
 ];
 
+const authors = [
+  "-George Bernard Shaw",
+  "-Barrack Obama",
+  "-Thomas Edison",
+  "-Anonymous",
+  "-Benjamin Franklin",
+  "-Lou Holtz",
+  "-Confucius",
+  "-Leonardo Da Vinci",
+  "-Norman Vincent Peale",
+  "-Vincent Van Gogh",
+  "-Robin Sharma",
+  "-Isaac Newton",
+  "-Dale Carnegie",
+  "-Mortimer Adler",
+  "-Steve Jobs",
+  "-Jim Rohn",
+  "-Jim Rohn",
+  "-Oscar Wilde",
+  "-Bernard M. Baruch",
+  "-Marilyn Monroe",
+  "-Lao Tzu",
+  "-Michelangelo",
+  "-Colin Powell",
+  "-Francis of Assisi",
+  "-Albus Dumbledore",
+  "-Mirror of Erised",
+];
  
