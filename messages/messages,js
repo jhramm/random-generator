@@ -1,0 +1,35 @@
+function generateRandomNumber(num) {
+    return Math.floor(Math.random() * num)
+}
+
+// three arrays in an object
+const collectiveSign = {
+    StarSign: ['Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius'],
+    luckOutput: ['You are lucky', 'Luck follows you', 'Luck is what you make it', 'Good luck', 'Great luck'],
+    luckAdvice: ['Don\'t speak to strangers', 'Take pride in yourself', 'Love yourself more', 'Be kind']
+}
+
+let personalSign = [];
+
+for (sign in collectiveSign) {
+    let optionInx = generateRandomNumber(collectiveSign[sign].length);
+    switch(sign) {
+      case 'StarSign':
+        personalSign.push(`Your star sign right now is: "${collectiveSign[sign][optionInx]}".`)
+        break;
+      case 'luckOutput':
+        personalSign.push(`Your luck that: "${collectiveSign[sign][optionInx]}".`) 
+        break;
+      case 'luckAdvice':
+        personalSign.push(`Things you must do: "${collectiveSign[sign][optionInx]}".`)
+        break;
+      default:
+        personalSign.push('There is not enough info')
+    }
+}
+
+function formatSign() {
+    const selected = personalSign.join('\n')
+    console.log(selected)
+}
+formatSign(personalSign);
